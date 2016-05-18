@@ -1,0 +1,18 @@
+
+footer{
+  .links{
+    background: $lightgrey;
+    border-bottom: 1px solid #c4d2e1;
+    margin: 1em 0;
+    ul{
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+  .legal{
+    text-align: center;
+    p {
+      @include fontSize(12px);
+    }
+  }
+}

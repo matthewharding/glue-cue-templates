@@ -1,1 +1,5 @@
-# glue_cue_templates
+# glue-cue-templates
+
+CUE templates using Bootstrap Framework.
+
+

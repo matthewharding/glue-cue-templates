@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.js","sourcesContent":["(function($) {\n    \"use strict\";\n    qg.glue.loader.init(function () {\n        // code here\n    });\n}(jQuery));\n"],"sourceRoot":"src/assets/js/"}
