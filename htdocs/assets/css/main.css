@@ -6487,16 +6487,12 @@ button.close {
   width: 1px; }
 
 .breadcrumb {
-  margin: 0 0 0.8em 0.8em;
+  margin: 0.8em 0 0.8em 0;
   border-radius: 0; }
   .breadcrumb > li + li:before {
     color: #CCCCCC;
     content: "> ";
     padding: 0 0.3em; }
-
-@media only screen and (max-width: 768px) {
-  .breadcrumb {
-    margin: 0.8em 0 0 0; } }
 
 html, body {
   font-family: Verdana,Helvetica,Arial,sans-serif;
@@ -6544,7 +6540,7 @@ header .navbar {
   background: #3A4249;
   border-radius: 0;
   min-height: 0;
-  margin-bottom: 0.6em; }
+  margin-bottom: 0; }
   header .navbar .navbar-brand {
     color: #ffffff; }
 
@@ -6644,19 +6640,19 @@ header .navbar {
   #primary-content .dropup > ul {
     margin: 0; } }
 
-.side-nav {
+#side-nav {
   background: #eef1f5; }
 
 @media only screen and (max-width: 768px) {
-  .side-nav {
+  #side-nav {
     padding-top: 0.1em;
     padding-bottom: 0.1em; } }
 
-.secondary-content {
+#secondary-content {
   background: #eef1f5; }
 
 @media only screen and (max-width: 768px) {
-  .secondary-content {
+  #secondary-content {
     padding-top: 0.1em;
     padding-bottom: 0.1em; } }
 
