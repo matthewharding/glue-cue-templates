@@ -16,6 +16,14 @@
 </head>
 
 <body>
+<!--For dev only - bootstrap breakpoint tester-->
+<!----------------------------------------------->
+<div class="device-xs visible-xs" style="background: yellow;">extra small (XS) bootstrap breakpoint</div>
+<div class="device-sm visible-sm" style="background: yellow;">small (SM) bootstrap breakpoint</div>
+<div class="device-md visible-md" style="background: yellow;">medium (MD) bootstrap breakpoint</div>
+<div class="device-lg visible-lg" style="background: yellow;">large (LG) bootstrap breakpoint</div>
+<!--For dev only - bootstrap breakpoint tester-->
+
 <div id="access" class="visuallyhidden">
   <h2>Skip links and keyboard navigation</h2>
   <ul>
@@ -97,7 +105,7 @@
     </div>
   <div class="row">
       <div class="col-lg-16">
-        <main id="primary-content" class="col-sm-8 col-sm-push-4" role="main">
+        <main id="primary-content" class="col-sm-16 col-md-8 col-md-push-4" role="main">
           <article>
             <h1>CUE template</h1>
             <ul class="list-inline text-right">
@@ -159,7 +167,7 @@
             </nav>
           </div>
         </main>
-        <aside id="secondary-content" class="col-sm-4 col-sm-push-4">
+        <aside id="secondary-content" class="col-sm-16 col-md-4 col-md-push-4">
           <article>
             <h2>Supplementary content</h2>
             <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
@@ -169,7 +177,7 @@
             <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
           </article>
         </aside>
-        <nav id="side-nav" role="navigation" aria-label="Side navigation" class="col-sm-4 col-sm-pull-12">
+        <nav id="side-nav" role="navigation" aria-label="Side navigation" class="col-sm-16 col-md-4 col-md-pull-12">
           <h2>Section heading</h2>
           <ul aria-label="section navigation">
             <li><a href="#">Menu item</a></li>
@@ -194,8 +202,6 @@
       </div>
     </div>
 </div>
-
-
 <footer>
     <div class="links">
       <div class="container-fluid site-width">
@@ -285,6 +291,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://rawgit.com/qld-gov-au/glue-module-loader/master/htdocs/assets/js/loader.js"></script>
 <script src="assets/js/main.js"></script>
+<!--For dev only - bootstrap breakpoint tester-->
+<!---------------------------->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=2"></' + 'script>')</script>
+<script>
+  function isBreakpoint( alias ) {
+    return $('.device-' + alias).is(':visible');
+  }
+  if( isBreakpoint('xs') ) {
+    $('.someClass').css('property', 'value');
+  }
+</script>
+<!--For dev only - bootstrap breakpoint tester-->
 </body>
 </html>
 
