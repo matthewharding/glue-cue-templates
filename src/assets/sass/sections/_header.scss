@@ -1,14 +1,15 @@
 header {
-  .branding{
-    .logo{
+  .row{
+    .branding{
+      @extend .col-sm-4;
       margin-top: 1em;
     }
-    nav{
+    .tools{
+      @extend .col-sm-8;
       text-align: right;
       margin-top: 0.4em;
       li{
         border-right: 0.1em solid #D3D3D3;
-        //font-size: $navSize;
         &:last-child{
           border-right: none;
         }
@@ -20,11 +21,11 @@ header {
     border-radius: 0;
     min-height:0;
     margin-bottom: 0;
-
     .navbar-brand{
       color: #ffffff;
     }
     .navbar-nav {
+      @extend .col-sm-12;
       a{
         //font-size: $navSize;
       }

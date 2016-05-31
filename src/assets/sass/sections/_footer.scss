@@ -1,9 +1,12 @@
 
 footer{
-  .links{
+  .more-info{
     background: $lightgrey;
     border-bottom: 1px solid #c4d2e1;
     margin: 1em 0;
+    .inner>section{
+      @extend .col-sm-2;
+    }
     ul{
       list-style: none;
       padding-left: 0;

@@ -1,4 +1,5 @@
-.breadcrumb-nav{
+#breadcrumb{
+  @extend .col-sm-12;
   .inner{
     padding: 0.5em 1em 0.5em 1em;
     margin: 1em 0;
